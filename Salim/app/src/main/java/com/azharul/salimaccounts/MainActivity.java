@@ -12,6 +12,8 @@ import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.print.PrintAttributes;
 import android.print.PrintManager;
 import android.text.InputType;
@@ -419,7 +421,9 @@ public class MainActivity extends Activity {
                 if (started) return;
                 started = true;
                 // Small delay so the embedded fonts are laid out before printing.
-                view.postDelayed(new Runnable() {
+                // NOTE: this WebView is never attached to a window, and View.postDelayed()
+                // on an unattached view never runs. So the main-thread Handler is used.
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         try {
