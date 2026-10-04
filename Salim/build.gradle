@@ -1,0 +1,4 @@
+// Root build file. No external libraries are used; only the Android Gradle Plugin.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}

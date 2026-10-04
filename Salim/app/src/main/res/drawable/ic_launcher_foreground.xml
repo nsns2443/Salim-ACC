@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground (108dp canvas, artwork kept inside the 66dp safe zone):
+     a white ledger sheet with three indigo bars. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M37,30h34a5,5 0,0 1,5 5v38a5,5 0,0 1,-5 5h-34a5,5 0,0 1,-5 -5v-38a5,5 0,0 1,5 -5z" />
+    <path android:fillColor="#4338CA" android:pathData="M40,58h7v12h-7z" />
+    <path android:fillColor="#4338CA" android:pathData="M50.5,49h7v21h-7z" />
+    <path android:fillColor="#4338CA" android:pathData="M61,40h7v30h-7z" />
+</vector>
